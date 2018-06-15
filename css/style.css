@@ -1,0 +1,148 @@
+
+body {
+	margin: auto;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	max-width: 1200px;
+	font-size: 10px;
+	line-height: 1.4;	
+}
+
+.nav-horizontal {
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+.buttom-nav {
+	display: inline-block;
+	text-align: center; 
+}
+
+.list {
+	display: inline-table;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+li {
+	display: table-cell;
+}
+a {
+	display: block;
+	padding: 0 1em;
+	text-decoration: none;
+	height: 3em;
+	line-height: 3;
+	color: #b0906c;
+	font-size: 12px;
+}
+p {
+	color: #b0906c;
+	font-size: 14px;
+}
+
+.card-group {
+	align-items: center;
+	float: left;
+	margin: 10px;
+	/*margin-bottom: 0;*/
+	border: #b0906c 2px solid;	
+}
+
+.attatch {
+	width: 200px;
+	height: 72px;
+}
+
+.wrapper {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+h1 {
+	color: #b0906c;
+	text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #b0906c;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.footer__right ul li a{
+	justify-content: center;
+	text-decoration: none; 
+}
+
+@media (max-width: 679px) {
+	.container{width:95%;}
+	.page{width:100%;}
+	.sidebar{display:none;}
+
+}
+@media (min-width: 680px) and (max-width: 959px) {
+	/*.card{width:530px;}*/
+	.container{width:680px;}
+	.page{width:530px;}
+	.sidebar{width: 150px;}
+}
+
+.nav-sideBar {
+	float: right;
+	color: white;
+	background-color: #b0906c;
+
+}
